@@ -1,0 +1,8 @@
+basically how pointer work is that,
+let say,
+var number1 int = 12; 
+// number1 two store the value of 12 at any memory location
+var number2 int = &number;
+// number2 store the address of number1 so, basically it means that number2 knows the address of number1 which has store the 12 value.
+var number3 int = *number2;
+// number3 store the value of number2 which is the address of number1 so, basically it means that number3 store the value of number1 which is 12.
