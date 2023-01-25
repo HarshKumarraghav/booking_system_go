@@ -69,6 +69,7 @@ func greetUser(conferenceName string, conferenceTickets int, remainingTickets ui
 	fmt.Println("Get your tickets here to attend")
 }
 
+// Given a slice of UserData, return a slice of strings containing the first names of each UserData.
 func printFirstNames(bookings []UserData) []string {
 	firstNames := []string{}
 	for _, booking := range bookings {
