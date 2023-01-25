@@ -23,6 +23,9 @@ func main() {
 	var userTickets uint
 	bookTickets(firstName, lastName, email, userTickets, remainingTickets)
 }
+
+// It takes in a first name, last name, email, user tickets and remaining tickets as arguments, and
+// then it prints out the first name, last name, email, user tickets and remaining tickets
 func bookTickets(firstName string, lastName string, email string, userTickets uint, remainingTickets uint) {
 	var userData UserData
 	var bookings = make([]UserData, 0)
@@ -59,11 +62,13 @@ func bookTickets(firstName string, lastName string, email string, userTickets ui
 	}
 }
 
+// It takes in three parameters, a string, an int, and a uint, and prints out a message to the user
 func greetUser(conferenceName string, conferenceTickets int, remainingTickets uint) {
 	fmt.Printf("Welcome to our %v booking application \n", conferenceName)
 	fmt.Printf("There are %v tickets and %v are remaining \n", conferenceTickets, remainingTickets)
 	fmt.Println("Get your tickets here to attend")
 }
+
 func printFirstNames(bookings []UserData) []string {
 	firstNames := []string{}
 	for _, booking := range bookings {
